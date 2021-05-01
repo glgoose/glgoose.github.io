@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: monospace;
+}
+
+.container {
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+
+header {
+  padding: 2em 0;
+  background-color: papayawhip;
+}
+
+nav {
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-size: 1.3em;
+}
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+}
+
+nav a {
+  margin: 0 1em;
+  padding: 0.4em 0;
+  text-decoration: none;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav a:visited {
+  color: black;
+}
+
+.current-page, nav li a:hover {
+  border-bottom: 0.2em solid red
+}

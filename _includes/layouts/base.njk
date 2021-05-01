@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>{{ title }} - Glenn Goossens</title>
+    <meta
+      name="description"
+      content="{{ description or metadata.description }}"
+/>
+    <link rel="stylesheet" href="/styles/index.css"/>
+  </head>
+  <body></body>
+  <header class="container">
+    <nav class="flex-row">
+      <p>
+        <a href="/">Glenn Goossens</a>
+      </p>
+      <ul class="flex-row">
+        {%- for entry in collections.all | eleventyNavigation %}
+          <li>
+            <a href="{{ entry.url }}"{{ ' class="current-page"' | safe if entry.url == page.url }}">{{ entry.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </header>
+</html>
