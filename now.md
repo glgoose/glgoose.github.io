@@ -10,7 +10,7 @@ footer: |-
 
 ## deepening web dev skills
 
-Primary focus in on core web technologies i.e. javascript, html, css.
+Primary focus is on core web technologies i.e. javascript, html, css.
 
 I'm currently (since Apr '21) enrolled in the [junior web developer training](https://becode.org/learn/junior-web-developer/) at BeCode Brussels.
 
