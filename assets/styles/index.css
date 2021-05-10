@@ -21,17 +21,17 @@ main > h1 {
   margin-top: 1em;
 }
 
-section > h1 {
+section > h2 {
   font-size: 2em;
   padding-bottom: 0.5em;
 }
 
-h2 {
+main > h2 {
   margin-top: 2em;
   margin-bottom: 1em;
 }
 
-h3 {
+main > h3 {
   margin-top: 1.5em;
 }
 
