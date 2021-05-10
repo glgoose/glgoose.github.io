@@ -130,7 +130,3 @@ section.about code::before {
   content: '$';
   margin-right: 0.4em;
 }
-
-.codeblock {
-  /* padding: 0.5em 0; */
-}
