@@ -1,0 +1,132 @@
+:root {
+  --light-bg: #F0EDEA;
+  --light-header-bg: #E5E2DB;
+  --light-selection-bg: #DF7470;
+  --light-text: #333232;
+  --light-anchor: #CDC9C0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  margin: 1em 0;
+}
+
+main > h1 {
+  font-size: 2.5em;
+  margin-top: 1em;
+}
+
+section > h2 {
+  font-size: 2em;
+  padding-bottom: 0.5em;
+}
+
+main > h2 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+main > h3 {
+  margin-top: 1.5em;
+}
+
+a:any-link {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 3px solid var(--light-selection-bg);
+}
+
+.header-anchor, .header-anchor:visited {
+  color: var(--light-anchor);
+  margin-left: -1em;
+  padding-right: 0.35em;
+  text-decoration: none;
+  visibility: hidden;
+}
+
+:hover > .header-anchor {
+  visibility: visible;
+}
+
+body {
+  font-family: Menlo, monospace;
+  background-color: var(--light-bg);
+  color: var(--light-text);
+}
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flex-center{
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+
+header {
+  padding: 2em 0;
+  background-color: var(--light-header-bg);
+  align-items: baseline;
+}
+
+nav {
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+nav a:any-link {
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.logo {
+  background-color: var(--light-selection-bg);
+  color: var(--light-bg);
+  padding-left: 0.6em;
+  padding-right: 0.6em;
+}
+.logo a:visited {
+  color: var(--light-bg); 
+}
+
+.nav-item {
+  margin-right: 1em;
+  height: 1.8em;
+}
+
+li.nav-item {
+  list-style-type: none;
+  border-bottom: 0.2em solid transparent;
+  border-top: 0.2em solid transparent;
+}
+
+li.nav-item a:visited {
+  color: var(--light-text);
+}
+
+li.current-page, li.nav-item:hover {
+  border-bottom-color: var(--light-selection-bg)
+}
+
+section.about {
+  color: var(--light-bg);
+  background-color: #282828;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+section.about code::before {
+  content: '$';
+  margin-right: 0.4em;
+}
