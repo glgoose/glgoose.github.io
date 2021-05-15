@@ -104,7 +104,7 @@ header {
 .logo {
   background-color: var(--light-selection-bg);
   color: var(--light-bg);
-  font-size: 0.4rem;
+  font-size: 0.3rem;
   font-weight: bold;
   padding-left: 0.6em;
   padding-right: 0.6em;
