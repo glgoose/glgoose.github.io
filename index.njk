@@ -4,6 +4,12 @@ title: home
 
 {% extends './_includes/layouts/base.njk' %}
 
+{% block header %}
+  <div class="banner">
+    {% include 'partials/banner.njk' %}
+  </div>
+{% endblock %}
+
 {% block main %}
   <main>
     <section class="container about">
@@ -11,7 +17,7 @@ title: home
         <code>whoami</code>
       </h2>
       <div>
-        <span>> </span>I'm Glenn & welcome to my homepage on the interwebs.<br>
+        <span>> </span>I'm <span class="highlight">Glenn Goossens</span> & welcome to my homepage on the interwebs.<br>
         <span>> </span><br>
         <span>> </span>See what I'm up to <a href="/now">now</a><br>
       </div>
