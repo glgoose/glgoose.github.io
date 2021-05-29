@@ -1,0 +1,11 @@
+@mixin sf-mono($filename-end, $font-weight, $font-style: normal)
+  @font-face
+    font-family: 'SF-Mono'
+    src: url('../../fonts/SFMono#{$filename-end}')
+    font-weight: $font-weight
+    font-style: $font-style
+    swap: true
+
+@include sf-mono('Regular', normal)
+
+@include sf-mono('Bold', bold)

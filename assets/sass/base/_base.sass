@@ -1,0 +1,23 @@
+@use '../variables' as *
+
+body
+  font-family: $font-mono
+  background-color: $primary
+  color: $text
+
+.about
+  background-color: $codeblock
+  padding: 3em 1em
+  border-radius: 1em
+
+  h2
+    margin-top: 0
+
+  & code::before
+    content: '$'
+    margin-right: 0.4em
+
+.highlight
+  color: $codeblock
+  background-color: $accent
+  padding: 0.15em 0.4em

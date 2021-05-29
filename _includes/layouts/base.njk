@@ -9,20 +9,20 @@
       name="description"
       content="{{ description or metadata.description }}"
 />
-    <link rel="stylesheet" href="/assets/css/index.css"/>
+    <link rel="stylesheet" href="/assets/css/style.css"/>
   </head>
   <body></body>
   <header class="container">
     {% block header %}
-      <nav class="flex-row">
-        <div class="logo flex-center">
+      <nav class="navbar">
+        <div class="logo">
           <a href="/">
             {% include 'partials/logo.njk'%}
           </a>
         </div>
-        <ul class="flex-row">
+        <ul class="navbar__items">
           {%- for entry in collections.all | eleventyNavigation %}
-            <li class="nav-item flex-center{{ ' current-page' | safe if entry.url == page.url }}">
+            <li class="navbar__item {{ 'navbar__item--active' | safe if entry.url == page.url }}">
               <a href="{{ entry.url }}">{{ entry.title }}</a>
             </li>
           {% endfor %}

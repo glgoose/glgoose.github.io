@@ -1,0 +1,26 @@
+@use '../variables' as *
+
+a:any-link
+  text-decoration: none
+  color: inherit
+  border-bottom: 0.2em solid $accent
+
+.header-anchor:any-link
+  color: $anchor
+  margin-left: -1.6rem
+  padding-right: 0.35rem
+  visibility: hidden
+
+:hover > .header-anchor
+  visibility: visible
+
+.navbar
+  a:any-link
+    border-bottom-color: transparent
+
+  &__item
+    border-bottom: 0.3em solid transparent
+    border-top: 0.3em solid transparent
+
+    &--active, &:hover
+      border-bottom-color: $accent
