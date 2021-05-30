@@ -21,14 +21,14 @@ Write a [guard clause](#guard-clause-definition)
 
 ## Scenario breakdown
 
-What questions are holding me back?
+What questions are holding me back from writing something publicly?
 
 * What if I look at back and cringe at my past self for what I wrote?
 * What if I'm not 100% sure about something I'm writing i.e. don't feel completely confident about the subject?
 * What if I know that what I wrote isn't yet at its highest standard and I would already like to get my ideas out there?
 
 > One common reason **we tell ourselves no** is because we don't think we're ready yet. “I'm not experienced enough.” Or, “I need to learn more.” Or, “I need to figure out a better plan first.”
-> We do this because we want to succeed right from the beginning.
+> We do this because **we want to succeed right from the beginning**.
 >
 > — James Clear in [It’s Not Your Job to Tell Yourself “No”](https://jamesclear.com/your-job)
 
@@ -50,11 +50,23 @@ A guard clause is sort of similar to a short voice-over narration in a movie (e.
 
 #### Examples
 
-"The purpose of this writeup was to summarize something interesting I learned recently, to make sure I understood it. I figured others might find it interesting, too.", epistemic status by Devon Zeugel on the [Digital vs analog error correction post](https://devonzuegel.com/post/digital-vs-analog-error-correction).
+::: example
+*The purpose of this writeup was to summarize something interesting I learned recently, to make sure I understood it. I figured others might find it interesting, too.*
 
-Something that can generally hold me back is that I know I'm not good at grammar i.e. I struggle with writing properly. A more general guard clause on my website could then be: "If you encounter any grammatical, spelling or factual mistakes please feel free to let me know or click on the 'Edit this page' link at the bottom of a page and edit it right away."
+Epistemic status by Devon Zeugel in the [Digital vs analog error correction](https://devonzuegel.com/post/digital-vs-analog-error-correction) post
+:::
 
-If I want to get an idea out there but am not yet satisfied with the result, instead of shielding it from the world, I could publish it with a guard clause saying: "Work in progress" or "Draft".
+Something that can generally hold me back is that I know I'm not good at grammar i.e. I struggle with writing properly. A more general guard clause on my website could then be:
+::: example
+*If you encounter any grammatical, spelling or factual mistakes please feel free to let me know or click on the 'Edit this page' link at the bottom of that page and edit it right away.*
+:::
+
+You could something like the following guard clause for publishing articles when they are not yet completely finished  or when you're not entirely satisfied with the result and already get the idea out there.
+::: example
+*This document is a work-in-progress draft at the moment.*
+
+Warning callout at top of [Markdown in MDN](https://developer.mozilla.org/en-US/docs/MDN/Contribute/Markdown_in_MDN) page in the MDN Web Docs
+:::
 
 #### Where to place a guard close?
 

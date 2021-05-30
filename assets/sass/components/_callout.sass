@@ -4,18 +4,40 @@
   border-radius: $rounded-lg
   margin: $s-4 0
 
-  p
-    margin: 0
-
   &__header
     background-color: lightgrey
     border-top-left-radius: $rounded-lg
     border-top-right-radius: $rounded-lg
     font-weight: bold
-    padding: $s-1_5 $s-3
+    padding: $s-2 $s-3_5
+
+    p
+      margin: 0
 
   &__content
     background-color: $codeblock
     border-bottom-left-radius: $rounded-lg
     border-bottom-right-radius: $rounded-lg
-    padding: $s-3
+    padding: $s-3_5
+
+    p
+      margin: 0
+
+      &:not(:first-child)
+        margin-top: $s-4
+
+  &.solution
+    .callout
+      &__header
+        color: lighten(green, 10%)
+        background-color: lighten(green, 60%)
+      &__content
+        background-color: lighten(green, 70%)
+
+  &.scenario
+    .callout
+      &__header
+        color: darken(orange, 10%)
+        background-color: lighten(orange, 30%)
+      &__content
+        background-color: lighten(orange, 40%)
