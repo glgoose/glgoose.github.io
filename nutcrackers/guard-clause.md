@@ -67,7 +67,7 @@ You could something like the following guard clause for publishing articles when
 ::: example
 *This document is a work-in-progress draft at the moment.*
 
-Warning callout at top of [Markdown in MDN](https://developer.mozilla.org/en-US/docs/MDN/Contribute/Markdown_in_MDN) page in the MDN Web Docs
+Warning callout at top of [Markdown in MDN](https://web.archive.org/web/20210530193646/https://developer.mozilla.org/en-US/docs/MDN/Contribute/Markdown_in_MDN) page in the MDN Web Docs
 :::
 
 #### Where to place a guard close?
