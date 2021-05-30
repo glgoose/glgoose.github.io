@@ -36,6 +36,8 @@ What questions are holding me back from writing something publicly?
 
 I borrowed the term guard clause from programming[^guard]. It's a piece of code written at the top, that performs a check and allows an early exit if the precondition is not met.
 
+The term stuck because writing such a clause ["guards" me](#what-writing-a-clause-%22guards%22-against) from perfectionism and wanting to protect the egoic/psychological self.
+
 I borrowed the idea from Devon Zeugel's epistemic statuses[^terminology].
 
 ### Guard clause definition
@@ -103,7 +105,7 @@ Bringing those concerns and doubts into the open means I have to acknowledge the
 
 #### 3. Battling with yourself
 
-It turns writing into an exploration because it takes away the stress that comes from worrying about the previous two points (perfectionism and ego).
+It turns writing into an exploration because it takes away the stress that comes from worrying about the previous two points (perfectionism and the ego).
 It allows me to explore new ideas, contribute something, gain new knowledge and make new friends and connections.
 
 When I'm engaged in an internal battle I stay self-centered and shut off from the world. Giving myself that option to include a guard clause and the act of writing it, is just enough to burst that self-protective bubble of needing to be perfect or needing to be someone and engage with the world.
