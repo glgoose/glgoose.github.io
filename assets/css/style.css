@@ -343,6 +343,17 @@ body {
   color: #333232;
 }
 
+details summary {
+  cursor: pointer;
+}
+
+ul, ol {
+  padding-left: 1rem;
+}
+ul li, ol li {
+  margin-bottom: 0.5rem;
+}
+
 .about {
   background-color: #fbfaf9;
   padding: 3em 1em;
@@ -390,6 +401,11 @@ h3 {
   margin-top: 1.5rem;
 }
 
+h4 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
 a:any-link {
   text-decoration: none;
   color: inherit;
@@ -398,8 +414,8 @@ a:any-link {
 
 .header-anchor:any-link {
   color: #cdc9c0;
-  margin-left: -1.6rem;
-  padding-right: 0.35rem;
+  border-bottom: none;
+  margin-left: 0.5rem;
   visibility: hidden;
 }
 
@@ -445,6 +461,69 @@ a:any-link {
 }
 .hero pre {
   font-family: inherit;
+}
+
+.callout {
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+}
+.callout__header {
+  background-color: lightgrey;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  font-weight: bold;
+  padding: 0.5rem 0.875rem;
+}
+.callout__header p {
+  margin: 0;
+}
+.callout__content {
+  background-color: #fbfaf9;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  padding: 0.875rem;
+}
+.callout__content p {
+  margin: 0;
+}
+.callout__content p:not(:first-child) {
+  margin-top: 1rem;
+}
+.callout.solution .callout__header {
+  color: #00b300;
+  background-color: #b3ffb3;
+}
+.callout.solution .callout__content {
+  background-color: #e6ffe6;
+}
+.callout.scenario .callout__header {
+  color: #cc8400;
+  background-color: #ffdb99;
+}
+.callout.scenario .callout__content {
+  background-color: #ffedcc;
+}
+
+blockquote {
+  border-left: 0.5em solid #86c5da;
+  background-color: #d4ebf2;
+  margin-top: 1.5rem;
+  padding: 0.875rem;
+}
+blockquote p {
+  margin: 0;
+}
+blockquote p:last-child {
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+.footnotes {
+  font-size: 0.9em;
+}
+.footnotes-sep {
+  margin-top: 3.5rem;
+  margin-bottom: 2rem;
 }
 
 .logo {
