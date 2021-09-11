@@ -5,11 +5,18 @@ import {
   Icon,
   Link as ChakraLink,
   Text,
-  useColorModeValue
+  useColorMode
 } from '@chakra-ui/react'
 import { FiGithub } from 'react-icons/fi'
 
 export default function Footer () {
+  const { colorMode } = useColorMode()
+
+  const borderColor = {
+    light: 'gray.200',
+    dark: 'gray.700'
+  }
+
   return (
     <Box as='footer' py={6} w='100vw' mt='auto'>
       <Flex
@@ -17,14 +24,14 @@ export default function Footer () {
         _before={{
           content: '""',
           borderBottom: '1px solid',
-          borderColor: useColorModeValue('gray.200', 'gray.700'),
+          borderColor: borderColor[colorMode],
           flexGrow: 1,
           mr: 8
         }}
         _after={{
           content: '""',
           borderBottom: '1px solid',
-          borderColor: useColorModeValue('gray.200', 'gray.700'),
+          borderColor: borderColor[colorMode],
           flexGrow: 1,
           ml: 8
         }}
