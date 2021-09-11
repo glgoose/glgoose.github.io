@@ -21,7 +21,7 @@ const Index = () => {
             fontSize='10vw'
             bgGradient='linear(to-l, #7928CA, #FF0080)'
             bgClip='text'
-            mt={10}
+            mt='1em'
           >
             glenn goossens
           </Heading>
