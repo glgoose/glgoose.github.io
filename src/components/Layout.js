@@ -1,6 +1,6 @@
 import { Box, Flex, useColorMode } from '@chakra-ui/react'
 import Footer from './Footer'
-import { DarkModeSwitch } from './DarkModeSwitch'
+import { DarkModeToggle } from './DarkModeToggle'
 
 export default function Layout ({ children }) {
   const { colorMode } = useColorMode()
@@ -20,7 +20,7 @@ export default function Layout ({ children }) {
       <Box as='main' height='100%'>
         {children}
       </Box>
-      <DarkModeSwitch />
+      <DarkModeToggle />
       <Footer />
     </Flex>
   )
