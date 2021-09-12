@@ -11,19 +11,20 @@
   media:
     - type: img
       url: "/media/cp-uideck.png"
+      addAnimation: true
   showcase: true
 
-- name: Quizzical
-  summary: generates Google Form skill assessment tests from markdown
-  description: >
-    Allows you to write down questions & answers in markdown and keep those under version control.
-    Makes it easy for anyone within the organization to update assessment tests.
-  tech:
-    - Google Apps Script
-  url: https://github.com/datopian/quizzical
-  date: 2019-10-18
-  media: ~
-  showcase: false
+# - name: Quizzical
+#   summary: generates Google Form skill assessment tests from markdown
+#   description: >
+#     Allows you to write down questions & answers in markdown and keep those under version control.
+#     Makes it easy for anyone within the organization to update assessment tests.
+#   tech:
+#     - Google Apps Script
+#   url: https://github.com/datopian/quizzical
+#   date: 2019-10-18
+#   media: ~
+#   showcase: false
 
 - name: Webpage Scroll GIF
   summary: creates a GIF of scrolling down a webpage
@@ -39,4 +40,5 @@
   media:
     - type: img
       url: "/media/franshals.gif"
+      addAnimation: false
   showcase: true
