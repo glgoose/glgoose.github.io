@@ -11,11 +11,11 @@ import NextLink from 'next/link'
 export default function Projects () {
   return (
     <Layout>
-      <Container maxW='2xl' mt={10}>
+      <Container maxW='2xl' mt={12}>
         <Stack justify='center'>
           <Center as='nav'>
             <NextLink href='/' passHref>
-              <ChakraLink mb={4} me='1em'>
+              <ChakraLink mb={3} me='1em'>
                 &#60; back
               </ChakraLink>
             </NextLink>
