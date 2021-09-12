@@ -11,7 +11,7 @@ import NextLink from 'next/link'
 export default function Projects () {
   return (
     <Layout>
-      <Container maxW='2xl' mt='4vh'>
+      <Container maxW='2xl' mt={10}>
         <Stack justify='center'>
           <Center as='nav'>
             <NextLink href='/' passHref>
