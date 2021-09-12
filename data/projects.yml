@@ -1,0 +1,42 @@
+---
+- name: CP-UIDeck
+  summary: recreated styling based on screenshots of a theme from uideck.com
+  description: >
+    Only utilizing CSS/SASS & HTML to clone the look of a site from screenshots received.
+  tech:
+    - CSS
+    - SASS
+    - HTML
+  url: "/cp-uideck/"
+  media:
+    - type: img
+      url: "/media/cp-uideck.png"
+  showcase: true
+
+- name: Quizzical
+  summary: generates Google Form skill assessment tests from markdown
+  description: >
+    Allows you to write down questions & answers in markdown and keep those under version control.
+    Makes it easy for anyone within the organization to update assessment tests.
+  tech:
+    - Google Apps Script
+  url: https://github.com/datopian/quizzical
+  date: 2019-10-18
+  media: ~
+  showcase: false
+
+- name: Webpage Scroll GIF
+  summary: creates a GIF of scrolling down a webpage
+  description: >
+    Useful for when you want to showcase a looping video of a (dynamic) webpage,
+    especially when you've used parallax (i.e. on-scroll) effects.
+  tech:
+    - Javascript
+    - Node.js
+    - Puppeteer
+  url: https://apify.com/glenn/gif-scroll-animation
+  date: 2019-06-25
+  media:
+    - type: img
+      url: "/media/franshals.gif"
+  showcase: true
