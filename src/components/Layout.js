@@ -1,6 +1,7 @@
 import { Box, Flex, useColorMode } from '@chakra-ui/react'
 import Footer from './Footer'
 import { DarkModeToggle } from './DarkModeToggle'
+import Meta from './Meta'
 
 export default function Layout ({ children }) {
   const { colorMode } = useColorMode()
@@ -17,6 +18,7 @@ export default function Layout ({ children }) {
       color={color[colorMode]}
       height='100vh'
     >
+      <Meta />
       <Box as='main' height='100%'>
         {children}
       </Box>
