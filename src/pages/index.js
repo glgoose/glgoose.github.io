@@ -16,7 +16,7 @@ const Index = () => {
   return (
     <Layout>
       <Center height='100%'>
-        <Stack spacing={16}>
+        <Stack spacing={16} align='center'>
           <Heading
             fontSize='10vw'
             bgGradient='linear(to-l, #7928CA, #FF0080)'
@@ -25,24 +25,21 @@ const Index = () => {
           >
             glenn goossens
           </Heading>
-          <Center>
-            <Stack spacing={8}>
-              <Text fontSize={{ base: 'xl', md: '2xl', lg: '3xl' }}>
-                web dev
-                <Box as='span' px={2}>
-                  &bull;
-                </Box>
-                🇧🇪 Belgium
-              </Text>
-              <Center>
-                <NextLink href='/projects' passHref>
-                  <ChakraLink fontSize={{ base: 'md', md: 'lg', lg: 'xl' }}>
-                    projects 👀
-                  </ChakraLink>
-                </NextLink>
-              </Center>
-            </Stack>
-          </Center>
+
+          <Stack spacing={8} align='center'>
+            <Text fontSize={{ base: 'xl', md: '2xl', lg: '3xl' }}>
+              web dev
+              <Box as='span' px={2}>
+                &bull;
+              </Box>
+              🇧🇪 Belgium
+            </Text>
+            <NextLink href='/projects' passHref>
+              <ChakraLink fontSize={{ base: 'md', md: 'lg', lg: 'xl' }}>
+                projects 👀
+              </ChakraLink>
+            </NextLink>
+          </Stack>
         </Stack>
       </Center>
     </Layout>
