@@ -43,7 +43,7 @@ export default function Card ({ project }) {
       </Box>
 
       <Flex direction='column' h={44} px={3} py={4}>
-        <HStack spacing={3}>
+        <HStack spacing={3} mt={1}>
           {project.tech.map(technology => (
             <Box
               as='span'
