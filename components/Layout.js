@@ -6,7 +6,7 @@ import Meta from './Meta'
 export default function Layout ({ children }) {
   const { colorMode } = useColorMode()
 
-  const bgColor = { light: 'gray.50', dark: 'gray.900' }
+  const bgColor = { light: 'gray.50', dark: 'gray.700' }
   const color = { light: 'gray.600', dark: 'gray.300' }
 
   return (

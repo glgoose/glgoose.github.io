@@ -1,6 +1,7 @@
 import {
   Badge,
   Box,
+  Circle,
   Flex,
   HStack,
   Icon,
@@ -27,6 +28,7 @@ const getMediaElement = (media, imgBoxHeight) => {
         src={media[0].url}
         alt={media[0].name}
         w='100%'
+        h='100%'
         fit='cover'
         align='center top'
         _hover={
@@ -46,7 +48,7 @@ export default function Card ({ project }) {
   useEffect(() => setImgBoxHeight(imgBoxEl.current.offsetHeight), [imgBoxEl])
 
   return (
-    <Box w='xs' bg={useColorModeValue('gray.300', 'gray.700')} rounded='lg'>
+    <Box w='xs' bg={useColorModeValue('gray.300', 'gray.600')} rounded='lg'>
       <Box
         h={52}
         ref={imgBoxEl}

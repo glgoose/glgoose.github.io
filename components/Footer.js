@@ -14,7 +14,7 @@ export default function Footer () {
 
   const borderColor = {
     light: 'gray.200',
-    dark: 'gray.700'
+    dark: 'gray.600'
   }
 
   return (
