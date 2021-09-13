@@ -9,13 +9,14 @@
   media:
     - type: img
       url: "/media/webshop-fe-1.png"
+      addAnimation: true
     - type: img
       url: "/media/webshop-fe-2.png"
   showcase: true
   tags:
     - eCommerce
 
-- name: CP-UIDeck
+- name: UI deck theme
   summary: Recreated the styling of a theme from uideck.com based on screenshots received.
   description: >
     Only utilizing CSS/SASS & HTML to clone the look of a site from screenshots received.
@@ -31,7 +32,6 @@
       addAnimation: true
   showcase: true
   tags:
-    - theme
     - clone
 
 # - name: Quizzical
