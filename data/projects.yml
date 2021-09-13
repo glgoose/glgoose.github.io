@@ -31,8 +31,8 @@
       addAnimation: true
   showcase: true
   tags:
-    - clone
     - theme
+    - clone
 
 # - name: Quizzical
 #   summary: generates Google Form skill assessment tests from markdown
