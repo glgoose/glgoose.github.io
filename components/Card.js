@@ -10,39 +10,51 @@ import {
   Text,
   useColorModeValue
 } from '@chakra-ui/react'
+import { useEffect, useRef, useState } from 'react'
 import { FiGithub } from 'react-icons/fi'
 
-const getMediaElement = media => {
+const getMediaElement = (media, imgBoxHeight) => {
   if (media === null) return
 
-  if (media[0].type === 'img') {
-    const slideDown = keyframes`
-			from {transform: translateY(0%)}
-			to {transform: translateY(-80%)}
+  const slideDown = keyframes`
+			from {transform: translateY(0px)}
+			to {transform: translateY(-${imgBoxHeight}px)}
 		`
+
+  if (media[0].type === 'img') {
     return (
       <Image
         src={media[0].url}
         alt={media[0].name}
         w='100%'
-        h={media[0].addAnimation ? undefined : '100%'}
         fit='cover'
         align='center top'
-        _hover={{
-          animation:
-            media[0].addAnimation &&
-            `${slideDown} 30s linear 0s 1 normal none running`
-        }}
+        _hover={
+          media[0].addAnimation && {
+            animation: slideDown + ' 10s linear 0s normal none running'
+          }
+        }
       />
     )
   }
 }
 
 export default function Card ({ project }) {
+  const [imgBoxHeight, setImgBoxHeight] = useState(null)
+  const imgBoxEl = useRef(null)
+
+  useEffect(() => setImgBoxHeight(imgBoxEl.current.offsetHeight), [imgBoxEl])
+
   return (
     <Box w='xs' bg={useColorModeValue('gray.300', 'gray.700')} rounded='lg'>
-      <Box h={52} roundedTop='lg' overflow='auto'>
-        {getMediaElement(project.media)}
+      <Box
+        h={52}
+        ref={imgBoxEl}
+        roundedTop='lg'
+        overflow='hidden'
+        _hover={{ overflowY: 'scroll' }}
+      >
+        {getMediaElement(project.media, imgBoxHeight)}
       </Box>
 
       <Flex direction='column' h={44} p={3}>
