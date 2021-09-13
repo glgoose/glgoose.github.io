@@ -7,7 +7,6 @@ import {
   Image,
   keyframes,
   Link as ChakraLink,
-  Stack,
   Text,
   useColorModeValue
 } from '@chakra-ui/react'
@@ -15,8 +14,6 @@ import { FiGithub } from 'react-icons/fi'
 
 const getMediaElement = media => {
   if (media === null) return
-
-  console.log(media)
 
   if (media[0].type === 'img') {
     const slideDown = keyframes`
@@ -72,7 +69,7 @@ export default function Card ({ project }) {
           </ChakraLink>
           <HStack>
             {project.tags.map(tag => (
-              <Badge>{tag}</Badge>
+              <Badge key={tag}>{tag}</Badge>
             ))}
           </HStack>
         </HStack>
