@@ -1,4 +1,20 @@
 ---
+- name: Webshop
+  summary: Creating a webshop front-end from scratch with basic functionalities.
+  tech:
+    - React
+    - Bootstrap
+  url: https://webshop-fe.netlify.app/
+  repo: https://github.com/glgoose/webshop-fe
+  media:
+    - type: img
+      url: "/media/webshop-fe-1.png"
+    - type: img
+      url: "/media/webshop-fe-2.png"
+  showcase: true
+  tags:
+    - eCommerce
+
 - name: CP-UIDeck
   summary: Recreated the styling of a theme from uideck.com based on screenshots received.
   description: >
@@ -8,6 +24,7 @@
     - SASS
     - HTML
   url: "/cp-uideck/"
+  repo: https://github.com/glgoose/cp-uideck
   media:
     - type: img
       url: "/media/cp-uideck.png"
@@ -15,6 +32,7 @@
   showcase: true
   tags:
     - clone
+    - theme
 
 # - name: Quizzical
 #   summary: generates Google Form skill assessment tests from markdown
@@ -38,6 +56,7 @@
     - Node.js
     - Puppeteer
   url: https://apify.com/glenn/gif-scroll-animation
+  repo: https://github.com/glgoose/gif-scroll-animation
   date: 2019-06-25
   media:
     - type: img
