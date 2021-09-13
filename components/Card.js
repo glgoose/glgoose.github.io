@@ -28,7 +28,7 @@ const getMediaElement = (media, imgBoxHeight) => {
         src={media[0].url}
         alt={media[0].name}
         w='100%'
-        h='100%'
+        minHeight='100%'
         fit='cover'
         align='center top'
         _hover={
