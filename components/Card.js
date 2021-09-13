@@ -18,7 +18,7 @@ const getMediaElement = media => {
   if (media[0].type === 'img') {
     const slideDown = keyframes`
 			from {transform: translateY(0%)}
-			to {transform: translateY(-90%)}
+			to {transform: translateY(-80%)}
 		`
     return (
       <Image
@@ -28,11 +28,11 @@ const getMediaElement = media => {
         h={media[0].addAnimation ? undefined : '100%'}
         fit='cover'
         align='center top'
-        animation={
-          media[0].addAnimation &&
-          `${slideDown} 30s linear 0s infinite normal none paused`
-        }
-        _hover={{ animationPlayState: 'running' }}
+        _hover={{
+          animation:
+            media[0].addAnimation &&
+            `${slideDown} 30s linear 0s 1 normal none running`
+        }}
       />
     )
   }
@@ -41,7 +41,7 @@ const getMediaElement = media => {
 export default function Card ({ project }) {
   return (
     <Box w='xs' bg={useColorModeValue('gray.300', 'gray.700')} rounded='lg'>
-      <Box h={52} roundedTop='lg' overflow='hidden'>
+      <Box h={52} roundedTop='lg' overflow='auto'>
         {getMediaElement(project.media)}
       </Box>
 
