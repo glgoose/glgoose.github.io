@@ -58,7 +58,9 @@ export default function Card ({ project }) {
         </HStack>
 
         <Text fontSize='lg' fontWeight='bold' mt={3} mb={2}>
-          {project.name}
+          <ChakraLink href={project.url} isExternal>
+            {project.name}
+          </ChakraLink>
         </Text>
 
         <Text fontSize='sm'>{project.summary}</Text>
