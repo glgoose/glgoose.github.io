@@ -48,7 +48,11 @@ export default function Card ({ project }) {
       <Flex direction='column' h={44} px={3} py={4}>
         <HStack spacing={3} mt={1}>
           {project.tech.map(technology => (
-            <Badge key={technology} variant='subtle' colorScheme='blue'>
+            <Badge
+              key={technology}
+              variant={useColorModeValue('outline', 'subtle')}
+              colorScheme='blue'
+            >
               {technology}
             </Badge>
           ))}
