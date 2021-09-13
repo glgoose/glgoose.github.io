@@ -47,7 +47,7 @@ export default function Card ({ project }) {
           {project.tech.map(technology => (
             <Box
               as='span'
-              key={technology.name}
+              key={technology}
               fontSize='xs'
               textTransform='uppercase'
               color={useColorModeValue('blue.600', 'blue.300')}
