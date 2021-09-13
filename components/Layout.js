@@ -16,12 +16,10 @@ export default function Layout ({ children }) {
       justifyContent='center'
       bg={bgColor[colorMode]}
       color={color[colorMode]}
-      height='100vh'
+      minHeight='100vh'
     >
       <Meta />
-      <Box as='main' height='100%'>
-        {children}
-      </Box>
+      <Box as='main'>{children}</Box>
       <DarkModeToggle />
       <Footer />
     </Flex>

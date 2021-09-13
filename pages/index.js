@@ -15,7 +15,7 @@ import Layout from '../components/Layout'
 const Index = () => {
   return (
     <Layout>
-      <Stack spacing={16} justify='center' align='center' height='100%'>
+      <Stack spacing={16} justify='center' align='center'>
         <Heading
           fontSize='10vw'
           bgGradient='linear(to-l, #7928CA, #FF0080)'
