@@ -24,7 +24,10 @@ const getMediaElement = media => {
       <Image
         src={media[0].url}
         alt={media[0].name}
+        w='100%'
+        h={media[0].addAnimation ? undefined : '100%'}
         fit='cover'
+        align='left top'
         animation={
           media[0].addAnimation
             ? `${slideDown} 30s linear 2s infinite normal none running`
