@@ -45,7 +45,7 @@ export default function Card ({ project }) {
         {getMediaElement(project.media)}
       </Box>
 
-      <Flex direction='column' h={44} px={3} py={4}>
+      <Flex direction='column' h={44} p={3}>
         <HStack spacing={3} mt={1}>
           {project.tech.map(technology => (
             <Badge
