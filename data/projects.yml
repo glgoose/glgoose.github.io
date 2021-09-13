@@ -1,6 +1,6 @@
 ---
 - name: CP-UIDeck
-  summary: recreated styling based on screenshots of a theme from uideck.com
+  summary: Recreated the styling based on screenshots of a theme from uideck.com.
   description: >
     Only utilizing CSS/SASS & HTML to clone the look of a site from screenshots received.
   tech:
@@ -13,6 +13,8 @@
       url: "/media/cp-uideck.png"
       addAnimation: true
   showcase: true
+  tags:
+    - automation
 
 # - name: Quizzical
 #   summary: generates Google Form skill assessment tests from markdown
@@ -27,7 +29,7 @@
 #   showcase: false
 
 - name: Webpage Scroll GIF
-  summary: creates a GIF of scrolling down a webpage
+  summary: Automatically creates a GIF of scrolling down a webpage for a given url.
   description: >
     Useful for when you want to showcase a looping video of a (dynamic) webpage,
     especially when you've used parallax (i.e. on-scroll) effects.
@@ -42,3 +44,5 @@
       url: "/media/franshals.gif"
       addAnimation: false
   showcase: true
+  tags:
+    - clone
