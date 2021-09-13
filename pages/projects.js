@@ -14,7 +14,7 @@ import Cards from '../components/Cards'
 export default function Projects ({ projects }) {
   return (
     <Layout>
-      <Container maxW='4xl' mt={12}>
+      <Container maxW={['', '2xl', '3xl', '5xl', '6xl']} mt={12}>
         <Stack justify='center'>
           <Center as='nav'>
             <NextLink href='/' passHref>
