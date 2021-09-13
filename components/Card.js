@@ -27,7 +27,7 @@ const getMediaElement = media => {
         w='100%'
         h={media[0].addAnimation ? undefined : '100%'}
         fit='cover'
-        align='left top'
+        align='center top'
         animation={
           media[0].addAnimation
             ? `${slideDown} 30s linear 2s infinite normal none running`
@@ -41,7 +41,7 @@ const getMediaElement = media => {
 export default function Card ({ project }) {
   return (
     <Box w='xs' bg={useColorModeValue('gray.300', 'gray.700')} rounded='lg'>
-      <Box w='100%' h={48} roundedTop='lg' overflow='hidden'>
+      <Box h={52} roundedTop='lg' overflow='hidden'>
         {getMediaElement(project.media)}
       </Box>
 
