@@ -48,19 +48,13 @@ export default function Card ({ project }) {
       <Flex direction='column' h={44} px={3} py={4}>
         <HStack spacing={3} mt={1}>
           {project.tech.map(technology => (
-            <Box
-              as='span'
-              key={technology}
-              fontSize='xs'
-              textTransform='uppercase'
-              color={useColorModeValue('blue.600', 'blue.300')}
-            >
+            <Badge key={technology} variant='subtle' colorScheme='blue'>
               {technology}
-            </Box>
+            </Badge>
           ))}
         </HStack>
 
-        <Text fontSize='lg' fontWeight='bold' mt={3} mb={2}>
+        <Text fontSize='xl' fontWeight='bold' mt={3} mb={1}>
           <ChakraLink href={project.url} isExternal>
             {project.name}
           </ChakraLink>
@@ -74,7 +68,15 @@ export default function Card ({ project }) {
           </ChakraLink>
           <HStack>
             {project.tags.map(tag => (
-              <Badge key={tag}>{tag}</Badge>
+              <Box
+                as='span'
+                key={tag}
+                fontSize='xs'
+                textTransform='uppercase'
+                color={useColorModeValue('blue.600', 'blue.300')}
+              >
+                {tag}
+              </Box>
             ))}
           </HStack>
         </HStack>
