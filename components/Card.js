@@ -28,10 +28,10 @@ const getMediaElement = media => {
         h={media[0].addAnimation ? undefined : '100%'}
         fit='cover'
         align='center top'
-        animation={
-          media[0].addAnimation
-            ? `${slideDown} 30s linear 2s infinite normal none running`
-            : undefined
+        _hover={
+          media[0].addAnimation && {
+            animation: `${slideDown} 30s linear 0s infinite normal none running`
+          }
         }
       />
     )
