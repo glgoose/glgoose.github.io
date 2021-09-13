@@ -1,11 +1,17 @@
 import {
+  Badge,
   Box,
+  Flex,
   HStack,
+  Icon,
   Image,
   keyframes,
+  Link as ChakraLink,
+  Stack,
   Text,
   useColorModeValue
 } from '@chakra-ui/react'
+import { FiGithub } from 'react-icons/fi'
 
 const getMediaElement = media => {
   if (media === null) return
@@ -34,18 +40,13 @@ const getMediaElement = media => {
 
 export default function Card ({ project }) {
   return (
-    <Box
-      w='xs'
-      h='xs'
-      bg={useColorModeValue('gray.300', 'gray.700')}
-      rounded='lg'
-    >
+    <Box w='xs' bg={useColorModeValue('gray.300', 'gray.700')} rounded='lg'>
       <Box w='100%' h={48} roundedTop='lg' overflow='hidden'>
         {getMediaElement(project.media)}
       </Box>
 
-      <Box px={3} py={4}>
-        <HStack spacing={3} mb={2}>
+      <Flex direction='column' h={44} px={3} py={4}>
+        <HStack spacing={3}>
           {project.tech.map(technology => (
             <Box
               as='span'
@@ -58,11 +59,24 @@ export default function Card ({ project }) {
             </Box>
           ))}
         </HStack>
-        <Text fontSize='lg' fontWeight='bold' mb={1}>
+
+        <Text fontSize='lg' fontWeight='bold' mt={3} mb={2}>
           {project.name}
         </Text>
+
         <Text fontSize='sm'>{project.summary}</Text>
-      </Box>
+
+        <HStack justify='space-between' mt='auto'>
+          <ChakraLink href={project.repo} isExternal>
+            <Icon as={FiGithub} />
+          </ChakraLink>
+          <HStack>
+            {project.tags.map(tag => (
+              <Badge>{tag}</Badge>
+            ))}
+          </HStack>
+        </HStack>
+      </Flex>
     </Box>
   )
 }
