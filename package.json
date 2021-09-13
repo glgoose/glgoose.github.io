@@ -4,7 +4,7 @@
     "dev": "next dev",
     "build": "next build && next export",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d out",
+    "deploy": "gh-pages -d out -t true",
     "start": "next start"
   },
   "dependencies": {
