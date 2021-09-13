@@ -5,11 +5,11 @@ import {
   Link as ChakraLink,
   Stack
 } from '@chakra-ui/react'
-import Layout from '../../components/Layout'
+import Layout from '../components/Layout'
 import NextLink from 'next/link'
 import fs from 'fs'
 import yaml, { JSON_SCHEMA } from 'js-yaml'
-import Cards from '../../components/Cards'
+import Cards from '../components/Cards'
 
 export default function Projects ({ projects }) {
   return (
