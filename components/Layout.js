@@ -1,4 +1,4 @@
-import { Box, Flex, useColorMode } from '@chakra-ui/react'
+import { Flex, useColorMode, VStack } from '@chakra-ui/react'
 import Footer from './Footer'
 import { DarkModeToggle } from './DarkModeToggle'
 import Meta from './Meta'
@@ -10,18 +10,13 @@ export default function Layout ({ children }) {
   const color = { light: 'gray.600', dark: 'gray.300' }
 
   return (
-    <Flex
-      direction='column'
-      alignItems='center'
-      justifyContent='center'
-      bg={bgColor[colorMode]}
-      color={color[colorMode]}
-      minHeight='100vh'
-    >
+    <VStack bg={bgColor[colorMode]} color={color[colorMode]} minH='100vh'>
       <Meta />
-      <Box as='main'>{children}</Box>
+      <Flex as='main' flex='1'>
+        {children}
+      </Flex>
       <DarkModeToggle />
       <Footer />
-    </Flex>
+    </VStack>
   )
 }

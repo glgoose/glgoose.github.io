@@ -1,13 +1,10 @@
 import {
   Box,
-  Center,
-  Flex,
   Heading,
   Link as ChakraLink,
   Stack,
   Text,
-  useColorModeValue,
-  Container
+  VStack
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import Layout from '../components/Layout'
@@ -15,8 +12,9 @@ import Layout from '../components/Layout'
 const Index = () => {
   return (
     <Layout>
-      <Stack spacing={16} justify='center' align='center'>
+      <VStack spacing={16} justify='center'>
         <Heading
+          as='h1'
           fontSize='10vw'
           bgGradient='linear(to-l, #7928CA, #FF0080)'
           bgClip='text'
@@ -39,7 +37,7 @@ const Index = () => {
             </ChakraLink>
           </NextLink>
         </Stack>
-      </Stack>
+      </VStack>
     </Layout>
   )
 }

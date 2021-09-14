@@ -1,9 +1,11 @@
 import {
+  Box,
   Center,
   Container,
+  Flex,
   Heading,
   Link as ChakraLink,
-  Stack
+  VStack
 } from '@chakra-ui/react'
 import Layout from '../components/Layout'
 import NextLink from 'next/link'
@@ -15,7 +17,7 @@ export default function Projects ({ projects }) {
   return (
     <Layout>
       <Container maxW={['', '2xl', '3xl', '5xl', '6xl']} mt={12}>
-        <Stack justify='center'>
+        <Flex direction='column' justify='center' align='center'>
           <Center as='nav'>
             <NextLink href='/' passHref>
               <ChakraLink mb={3} me='1em'>
@@ -23,14 +25,12 @@ export default function Projects ({ projects }) {
               </ChakraLink>
             </NextLink>
           </Center>
-          <Center>
-            <Heading size='2xl' mb={8}>
-              Projects
-            </Heading>
-          </Center>
+          <Heading as='h1' size='2xl' mb={8}>
+            Projects
+          </Heading>
 
           <Cards projects={projects} />
-        </Stack>
+        </Flex>
       </Container>
     </Layout>
   )
