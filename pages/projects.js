@@ -18,14 +18,12 @@ export default function Projects ({ projects }) {
     <Layout>
       <Container maxW={['', '2xl', '3xl', '5xl', '6xl']} mt={12}>
         <Flex direction='column' justify='center' align='center'>
-          <Center as='nav'>
+          <Center as='nav' mb={[3, 6]} me='1em'>
             <NextLink href='/' passHref>
-              <ChakraLink mb={3} me='1em'>
-                &#60; back
-              </ChakraLink>
+              <ChakraLink>&#60; back</ChakraLink>
             </NextLink>
           </Center>
-          <Heading as='h1' size='2xl' mb={8}>
+          <Heading as='h1' size='2xl' mb={[8, 16]}>
             Projects
           </Heading>
 
