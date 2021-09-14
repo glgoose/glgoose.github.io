@@ -13,7 +13,7 @@ export const DarkModeToggle = () => {
   return (
     <Button
       variant='ghost'
-      position='fixed'
+      position='absolute'
       top='1rem'
       right='1rem'
       color={iconColor[colorMode]}
