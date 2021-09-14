@@ -4,21 +4,23 @@ const { useState, useRef, useEffect } = require('react')
 export default function MediaElement ({ media }) {
   if (media === null) return
 
-  const [imgBoxHeight, setImgBoxHeight] = useState(null)
-  const imgBoxEl = useRef(null)
+  const mediaBoxEl = useRef(null)
+  const [mediaBoxHeight, setMediaBoxHeight] = useState(null)
 
-  useEffect(() => setImgBoxHeight(imgBoxEl.current.offsetHeight), [imgBoxEl])
+  useEffect(() => {
+    setMediaBoxHeight(mediaBoxEl.current.offsetHeight)
+  }, [mediaBoxEl])
 
   const slideDown = keyframes`
 			from {transform: translateY(0px)}
-			to {transform: translateY(-${imgBoxHeight}px)}
+			to {transform: translateY(-${mediaBoxHeight}px)}
 		`
 
   if (media[0].type === 'img') {
     return (
       <Box
         h={52}
-        ref={imgBoxEl}
+        ref={mediaBoxEl}
         roundedTop='lg'
         overflow='hidden'
         _hover={{ overflowY: 'scroll' }}
